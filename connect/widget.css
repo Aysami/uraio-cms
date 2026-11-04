@@ -1,0 +1,69 @@
+/* Uraio Connect — embeddable widget styles. Self-contained, no external assets. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { color-scheme: light; }
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #ffffff;
+  color: #16211f;
+  font-size: 13px;
+  line-height: 1.45;
+  padding: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.wgt-shell { max-width: 1200px; margin: 0 auto; border: 1px solid #e2eae7; border-radius: 16px; padding: 16px; background: #fff; }
+.wgt-title { font-family: inherit; font-size: 1.05rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; color: #0b1220; }
+.wgt-brand { display: flex; align-items: center; gap: 8px; border-top: 1px solid #e2eae7; margin-top: 14px; padding-top: 10px; font-size: 11px; color: #687873; }
+.wgt-brand a { color: #0f766e; text-decoration: none; font-weight: 700; }
+
+.empty { padding: 18px; text-align: center; color: #687873; border: 1px dashed #cddbd6; border-radius: 10px; }
+.icon { width: 16px; height: 16px; stroke-width: 2; vertical-align: -3px; }
+.icon-sm { width: 14px; height: 14px; }
+
+/* Menu & product grid */
+.wgt-group { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: #0f766e; margin: 12px 0 6px; }
+.wgt-items { display: grid; gap: 8px; }
+.wgt-product, .wgt-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px; border: 1px solid #e2eae7; border-radius: 12px; background: #f9fcfb; }
+.wgt-thumb { width: 56px; height: 56px; object-fit: cover; border-radius: 8px; flex: 0 0 56px; background: #edf3f1; }
+.wgt-item-body { min-width: 0; flex: 1; }
+.wgt-item-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.wgt-item-name { font-weight: 700; font-size: 0.83rem; }
+.wgt-item-price { font-weight: 800; color: #0f766e; white-space: nowrap; font-size: 0.83rem; }
+.wgt-item-meta, .wgt-item-desc { color: #5b6b67; font-size: 0.72rem; margin-top: 2px; }
+.wgt-products { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.wgt-product { flex-direction: column; }
+.wgt-product .wgt-thumb { width: 100%; height: 110px; flex: none; }
+
+/* Hours */
+.wgt-hours { list-style: none; }
+.wgt-hours li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 2px; border-bottom: 1px solid #eef2f0; font-size: 0.85rem; }
+.wgt-hours li:last-child { border-bottom: 0; }
+.wgt-hours li span:first-child { color: #687873; }
+.wgt-hours-value { font-weight: 700; }
+.is-closed { color: #c2413b; }
+.wgt-address { margin-top: 10px; font-size: 0.8rem; color: #5b6b67; }
+
+/* Reviews */
+.wgt-reviews { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.wgt-review { border: 1px solid #e2eae7; border-radius: 12px; padding: 10px; background: #f9fcfb; }
+.wgt-stars { color: #f59e0b; letter-spacing: 2px; }
+.wgt-review figcaption { font-size: 0.78rem; margin: 6px 0; }
+.wgt-review-author { font-size: 0.72rem; color: #687873; font-weight: 600; }
+
+/* Forms */
+.wgt-form { display: grid; gap: 8px; }
+.wgt-form label { display: grid; gap: 3px; font-size: 0.72rem; font-weight: 700; color: #31403d; }
+.wgt-form input, .wgt-form textarea, .wgt-form select { width: 100%; border: 1px solid #cddbd6; border-radius: 9px; background: #fff; padding: 8px 10px; font: inherit; font-size: 0.82rem; }
+.wgt-form input:focus, .wgt-form textarea:focus { outline: none; border-color: #0f766e; box-shadow: 0 0 0 3px rgba(15,118,110,.15); }
+.wgt-form button { background: #0f766e; color: #fff; border: 0; border-radius: 10px; padding: 10px 14px; font-weight: 800; cursor: pointer; font-size: 0.85rem; }
+.wgt-form button:hover { background: #0a5a54; }
+.hp-field { position: absolute; left: -9999px; opacity: 0; width: 1px; height: 1px; overflow: hidden; }
+.wgt-success { padding: 20px; text-align: center; }
+.wgt-success h3 { font-size: 1rem; margin-bottom: 6px; color: #0f766e; }
+
+/* WhatsApp */
+.wgt-whatsapp { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #062b1b; border: 0; border-radius: 12px; padding: 12px 16px; font-weight: 800; text-decoration: none; font-size: 0.9rem; width: 100%; justify-content: center; }
+
+@media (max-width: 420px) {
+  body { padding: 10px; }
+  .wgt-products { grid-template-columns: repeat(2, 1fr); }
+}

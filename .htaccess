@@ -1,0 +1,63 @@
+# Uraio Business OS — Apache configuration
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Never serve application internals directly.
+  RewriteRule ^(config|includes|storage|logs|deploy|tests|modules)(/|$) - [F,L]
+
+  # Search engine files
+  RewriteRule ^robots\.txt$ robots.php [L]
+  RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+  # Public business websites: /s/{slug} and /s/{slug}/{page} (legacy path form)
+  # RewriteBase is intentionally omitted so the app works at the domain root
+  # or in a subdirectory. When installed in a subdirectory, set it explicitly:
+  #   RewriteBase /your-subdirectory/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^s/([a-z0-9-]+)/([a-z0-9-]+)/?$ site.php?__tenant=$1&page=$2 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^s/([a-z0-9-]+)/?$ site.php?__tenant=$1 [L,QSA]
+
+  # Public business websites: /{slug} and /{slug}/{page} (pretty paths)
+  # Only unmatched paths reach these rules, so /app/, /admin/, /assets/ and
+  # every real file keep working. Reserved slugs are blocked when saving.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([a-z0-9-]+)/?$ site.php?__tenant=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/?$ site.php?__tenant=$1&page=$2 [L,QSA]
+</IfModule>
+
+# Prevent the installer from being re-run once the app is installed.
+<IfModule mod_rewrite.c>
+  RewriteCond %{DOCUMENT_ROOT}/storage/installed.lock -f
+  RewriteRule ^install\.php$ - [F,L]
+</IfModule>
+
+<IfModule mod_authz_core.c>
+  <FilesMatch "(^\.|\.(sql|lock|log|ini|sh|bak|dist|example\.php)$)">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache immutable static assets.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+</IfModule>

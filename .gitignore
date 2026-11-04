@@ -1,0 +1,33 @@
+# Secrets — never commit
+config/credentials.php
+
+# Runtime state (keep the directories and their protection rules)
+storage/installed.lock
+logs/*
+!logs/.htaccess
+!logs/.gitkeep
+!storage/.htaccess
+!storage/.gitkeep
+*.log
+
+# Uploaded media (keep the directories, not the files)
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+
+# Scratch
+dist/
+*.zip
+
+# Editor/OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Dependency folders (unused, ignored for safety)
+node_modules/
+vendor/

@@ -1,0 +1,437 @@
+[
+  {
+    "group": "Food & Hospitality",
+    "icon": "🍽️",
+    "template": "restaurant",
+    "modules": ["restaurant", "ecommerce"],
+    "items": [
+      {"name": "Restaurant", "icon": "🍽️", "popular": 1},
+      {"name": "Fast Food", "icon": "🍔", "popular": 1},
+      {"name": "Bakery", "icon": "🥐", "popular": 1},
+      {"name": "Cafe", "icon": "☕", "popular": 1},
+      {"name": "Catering", "icon": "🍲"},
+      {"name": "Food Delivery", "icon": "🛵", "popular": 1},
+      {"name": "Bar & Lounge", "icon": "🍸"},
+      {"name": "Food Truck", "icon": "🚚"},
+      {"name": "Pastry Shop", "icon": "🧁"},
+      {"name": "Ice Cream Shop", "icon": "🍦"},
+      {"name": "Local Eatery", "icon": "🍛"},
+      {"name": "Juice Bar", "icon": "🥤"}
+    ]
+  },
+  {
+    "group": "Accommodation",
+    "icon": "🏨",
+    "template": "hotel",
+    "modules": ["hotel"],
+    "items": [
+      {"name": "Hotel", "icon": "🏨", "popular": 1},
+      {"name": "Guest House", "icon": "🛏️", "popular": 1},
+      {"name": "Motel", "icon": "🛎️"},
+      {"name": "Resort", "icon": "🌴", "popular": 1},
+      {"name": "Serviced Apartment", "icon": "🏢"},
+      {"name": "Hostel", "icon": "🛌"},
+      {"name": "Lodge", "icon": "🏕️"},
+      {"name": "Short-let Apartment", "icon": "🔑"},
+      {"name": "Conference Centre", "icon": "🎤"}
+    ]
+  },
+  {
+    "group": "Healthcare",
+    "icon": "🏥",
+    "template": "professional",
+    "modules": ["healthcare"],
+    "items": [
+      {"name": "Hospital", "icon": "🏥", "popular": 1},
+      {"name": "Clinic", "icon": "🩺", "popular": 1},
+      {"name": "Doctor", "icon": "👨‍⚕️", "popular": 1},
+      {"name": "Dentist", "icon": "🦷", "popular": 1},
+      {"name": "Pharmacy", "icon": "💊", "popular": 1, "modules": ["pharmacy"], "template": "ecommerce"},
+      {"name": "Medical Laboratory", "icon": "🧪"},
+      {"name": "Optician", "icon": "👓"},
+      {"name": "Physiotherapist", "icon": "🦴"},
+      {"name": "Veterinary Clinic", "icon": "🐾"},
+      {"name": "Diagnostic Centre", "icon": "🩻"},
+      {"name": "Maternity Home", "icon": "🤰"},
+      {"name": "Dental Clinic", "icon": "🪥"},
+      {"name": "Mental Health Practice", "icon": "🧠"},
+      {"name": "Home Care Service", "icon": "🏠"}
+    ]
+  },
+  {
+    "group": "Automotive",
+    "icon": "🚗",
+    "template": "professional",
+    "modules": ["automotive"],
+    "items": [
+      {"name": "Mechanic", "icon": "🔧", "popular": 1},
+      {"name": "Car Wash", "icon": "🚿", "popular": 1},
+      {"name": "Auto Dealer", "icon": "🚘", "popular": 1},
+      {"name": "Spare Parts", "icon": "⚙️", "popular": 1},
+      {"name": "Auto Electrician", "icon": "⚡"},
+      {"name": "Panel Beater", "icon": "🔨"},
+      {"name": "Tyre Shop", "icon": "🛞"},
+      {"name": "Car Rental", "icon": "🚙"},
+      {"name": "Motorcycle Repair", "icon": "🏍️"},
+      {"name": "Auto Glass", "icon": "🪟"},
+      {"name": "Car Tracking", "icon": "📍"},
+      {"name": "Vehicle Inspection", "icon": "✅"}
+    ]
+  },
+  {
+    "group": "Beauty & Wellness",
+    "icon": "💇",
+    "template": "professional",
+    "modules": ["beauty"],
+    "items": [
+      {"name": "Salon", "icon": "💇", "popular": 1},
+      {"name": "Barber", "icon": "💈", "popular": 1},
+      {"name": "Spa", "icon": "💆", "popular": 1},
+      {"name": "Makeup Artist", "icon": "💄"},
+      {"name": "Cosmetics", "icon": "🧴"},
+      {"name": "Nail Studio", "icon": "💅"},
+      {"name": "Massage Therapy", "icon": "🤲"},
+      {"name": "Tattoo Studio", "icon": "🖋️"},
+      {"name": "Fitness Trainer", "icon": "🏋️"},
+      {"name": "Yoga Studio", "icon": "🧘"},
+      {"name": "Skincare Clinic", "icon": "✨"},
+      {"name": "Bridal Beauty", "icon": "👰"}
+    ]
+  },
+  {
+    "group": "Education",
+    "icon": "📚",
+    "template": "professional",
+    "modules": ["education"],
+    "items": [
+      {"name": "School", "icon": "🏫", "popular": 1},
+      {"name": "Training Centre", "icon": "🎓", "popular": 1},
+      {"name": "Tutor", "icon": "📖", "popular": 1},
+      {"name": "Academy", "icon": "🏛️"},
+      {"name": "Nursery", "icon": "🧸"},
+      {"name": "University", "icon": "🎓"},
+      {"name": "College", "icon": "🏫"},
+      {"name": "Driving School", "icon": "🚗"},
+      {"name": "Computer Training", "icon": "💻"},
+      {"name": "Language School", "icon": "🗣️"},
+      {"name": "Exam Centre", "icon": "📝"},
+      {"name": "Library", "icon": "📚"},
+      {"name": "Music School", "icon": "🎵"},
+      {"name": "Vocational Centre", "icon": "🛠️"}
+    ]
+  },
+  {
+    "group": "Professional Services",
+    "icon": "💼",
+    "template": "slate",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Lawyer", "icon": "⚖️", "popular": 1},
+      {"name": "Accountant", "icon": "🧾", "popular": 1},
+      {"name": "Consultant", "icon": "💼", "popular": 1},
+      {"name": "Architect", "icon": "📐"},
+      {"name": "Engineer", "icon": "📏"},
+      {"name": "Insurance Broker", "icon": "🛡️"},
+      {"name": "Surveyor", "icon": "📡"},
+      {"name": "Notary", "icon": "🖊️"},
+      {"name": "Tax Consultant", "icon": "📊"},
+      {"name": "Business Coach", "icon": "🎯"},
+      {"name": "Graphic Designer", "icon": "🎨"},
+      {"name": "Web Developer", "icon": "💻"},
+      {"name": "HR Consultant", "icon": "👥"},
+      {"name": "Audit Firm", "icon": "🔍"}
+    ]
+  },
+  {
+    "group": "Real Estate & Property",
+    "icon": "🏘️",
+    "template": "professional",
+    "modules": ["real-estate"],
+    "items": [
+      {"name": "Real Estate Agency", "icon": "🏘️", "popular": 1},
+      {"name": "Property Developer", "icon": "🏗️", "popular": 1},
+      {"name": "Landlord", "icon": "🔑"},
+      {"name": "Property Manager", "icon": "🏢"},
+      {"name": "Short-let Manager", "icon": "🛎️"},
+      {"name": "Facility Manager", "icon": "🧰"},
+      {"name": "Interior Designer", "icon": "🛋️"},
+      {"name": "Furniture Store", "icon": "🪑", "modules": ["ecommerce"], "template": "market"},
+      {"name": "Estate Surveyor", "icon": "📐"},
+      {"name": "Property Valuer", "icon": "💰"}
+    ]
+  },
+  {
+    "group": "Retail & E-commerce",
+    "icon": "🛍️",
+    "template": "market",
+    "modules": ["ecommerce"],
+    "items": [
+      {"name": "Supermarket", "icon": "🛒", "popular": 1},
+      {"name": "Grocery Store", "icon": "🥬", "popular": 1},
+      {"name": "Fashion Store", "icon": "👗", "popular": 1},
+      {"name": "Electronics Store", "icon": "📱", "popular": 1},
+      {"name": "Phone Shop", "icon": "📞", "popular": 1},
+      {"name": "Bookstore", "icon": "📚"},
+      {"name": "Furniture Shop", "icon": "🪑"},
+      {"name": "Jewelry Store", "icon": "💎"},
+      {"name": "Baby Store", "icon": "🍼"},
+      {"name": "Sporting Goods", "icon": "⚽"},
+      {"name": "Hardware Store", "icon": "🔩"},
+      {"name": "Gift Shop", "icon": "🎁"},
+      {"name": "Online Store", "icon": "🛍️", "popular": 1},
+      {"name": "Market Vendor", "icon": "🧺"},
+      {"name": "Boutique", "icon": "👚"},
+      {"name": "Pet Store", "icon": "🐶"},
+      {"name": "Stationery Shop", "icon": "✏️"}
+    ]
+  },
+  {
+    "group": "Construction & Trades",
+    "icon": "🛠️",
+    "template": "professional",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Carpenter", "icon": "🪚", "popular": 1},
+      {"name": "Electrician", "icon": "⚡", "popular": 1},
+      {"name": "Plumber", "icon": "🔧", "popular": 1},
+      {"name": "Painter", "icon": "🎨", "popular": 1},
+      {"name": "Welder", "icon": "🔥"},
+      {"name": "Mason", "icon": "🧱"},
+      {"name": "Tiler", "icon": "🧩"},
+      {"name": "Roofer", "icon": "🏠"},
+      {"name": "Borehole Driller", "icon": "💧"},
+      {"name": "Solar Installer", "icon": "☀️"},
+      {"name": "HVAC Technician", "icon": "❄️"},
+      {"name": "Generator Repair", "icon": "🔌"},
+      {"name": "Locksmith", "icon": "🔐"},
+      {"name": "Pest Control", "icon": "🐜"},
+      {"name": "Cleaning Service", "icon": "🧹", "popular": 1},
+      {"name": "Landscaper", "icon": "🌿"},
+      {"name": "Scaffolding Service", "icon": "🏗️"}
+    ]
+  },
+  {
+    "group": "Religious Organizations",
+    "icon": "⛪",
+    "template": "aurora",
+    "modules": ["religious"],
+    "items": [
+      {"name": "Mosque", "icon": "🕌", "popular": 1},
+      {"name": "Church", "icon": "⛪", "popular": 1},
+      {"name": "Islamic Centre", "icon": "☪️"},
+      {"name": "Religious Organization", "icon": "🙏"},
+      {"name": "Prayer Centre", "icon": "🕯️"},
+      {"name": "Ministry", "icon": "📖"},
+      {"name": "Cathedral", "icon": "⛪"},
+      {"name": "Chaplaincy", "icon": "🕊️"}
+    ]
+  },
+  {
+    "group": "NGO & Community",
+    "icon": "🤝",
+    "template": "aurora",
+    "modules": ["ngo"],
+    "items": [
+      {"name": "NGO", "icon": "🤝", "popular": 1},
+      {"name": "Charity", "icon": "❤️", "popular": 1},
+      {"name": "Foundation", "icon": "🌱"},
+      {"name": "Community Association", "icon": "🏘️"},
+      {"name": "Cooperative Society", "icon": "🤲"},
+      {"name": "Youth Group", "icon": "🧑‍🤝‍🧑"},
+      {"name": "Women's Group", "icon": "👩‍👩‍👧"},
+      {"name": "Orphanage", "icon": "🏠"},
+      {"name": "Social Enterprise", "icon": "🌍"},
+      {"name": "Animal Shelter", "icon": "🐾"}
+    ]
+  },
+  {
+    "group": "Events & Entertainment",
+    "icon": "🎉",
+    "template": "aurora",
+    "modules": ["professional", "ecommerce"],
+    "items": [
+      {"name": "Event Planner", "icon": "🎉", "popular": 1},
+      {"name": "Wedding Planner", "icon": "💍", "popular": 1},
+      {"name": "Photographer", "icon": "📷", "popular": 1},
+      {"name": "Videographer", "icon": "🎥"},
+      {"name": "DJ", "icon": "🎧"},
+      {"name": "Live Band", "icon": "🎸"},
+      {"name": "Decorator", "icon": "🎈"},
+      {"name": "Master of Ceremonies", "icon": "🎤"},
+      {"name": "Cinema", "icon": "🎬"},
+      {"name": "Nightclub", "icon": "🪩"},
+      {"name": "Amusement Park", "icon": "🎢"},
+      {"name": "Party Equipment Rental", "icon": "🎪"},
+      {"name": "Event Hall", "icon": "🏛️"}
+    ]
+  },
+  {
+    "group": "Media & Creative",
+    "icon": "🎨",
+    "template": "slate",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Printing Press", "icon": "🖨️", "popular": 1},
+      {"name": "Signage", "icon": "🪧"},
+      {"name": "Advertising Agency", "icon": "📣"},
+      {"name": "Media House", "icon": "📰"},
+      {"name": "Radio Station", "icon": "📻"},
+      {"name": "TV Station", "icon": "📺"},
+      {"name": "Publisher", "icon": "📚"},
+      {"name": "Recording Studio", "icon": "🎙️"},
+      {"name": "Content Creator", "icon": "🎬"},
+      {"name": "Digital Marketing Agency", "icon": "📈"},
+      {"name": "Branding Agency", "icon": "✨"},
+      {"name": "Photo Studio", "icon": "📸"}
+    ]
+  },
+  {
+    "group": "Finance & Insurance",
+    "icon": "🏦",
+    "template": "slate",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Bank", "icon": "🏦", "popular": 1},
+      {"name": "Microfinance Bank", "icon": "🏦", "popular": 1},
+      {"name": "Insurance Company", "icon": "🛡️", "popular": 1},
+      {"name": "Bureau de Change", "icon": "💱"},
+      {"name": "Investment Firm", "icon": "📈"},
+      {"name": "Fintech", "icon": "💳"},
+      {"name": "Loan Company", "icon": "💰"},
+      {"name": "Cooperative Bank", "icon": "🤝"},
+      {"name": "Pension Administrator", "icon": "📊"},
+      {"name": "Financial Adviser", "icon": "🧮"}
+    ]
+  },
+  {
+    "group": "Transport & Logistics",
+    "icon": "🚚",
+    "template": "professional",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Taxi Service", "icon": "🚕", "popular": 1},
+      {"name": "Bus Company", "icon": "🚌", "popular": 1},
+      {"name": "Courier Service", "icon": "📦", "popular": 1},
+      {"name": "Logistics Company", "icon": "🚚"},
+      {"name": "Moving Company", "icon": "🪑"},
+      {"name": "Trucking Company", "icon": "🚛"},
+      {"name": "Boat Service", "icon": "⛵"},
+      {"name": "Bike Delivery", "icon": "🛵"},
+      {"name": "Airport Shuttle", "icon": "✈️"},
+      {"name": "Freight Forwarder", "icon": "🚢"},
+      {"name": "Ride Hailing", "icon": "📱"}
+    ]
+  },
+  {
+    "group": "Agriculture & Agro",
+    "icon": "🌾",
+    "template": "market",
+    "modules": ["ecommerce"],
+    "items": [
+      {"name": "Farm", "icon": "🌾", "popular": 1},
+      {"name": "Poultry Farm", "icon": "🐔", "popular": 1},
+      {"name": "Fish Farm", "icon": "🐟"},
+      {"name": "Agro Dealer", "icon": "🌱"},
+      {"name": "Veterinary Supplies", "icon": "🐄"},
+      {"name": "Feed Mill", "icon": "🌽"},
+      {"name": "Greenhouse", "icon": "🪴"},
+      {"name": "Agricultural Consultant", "icon": "🌿"},
+      {"name": "Food Processing", "icon": "🏭"},
+      {"name": "Dairy Farm", "icon": "🥛"},
+      {"name": "Seed Supplier", "icon": "🌰"},
+      {"name": "Farm Equipment", "icon": "🚜"}
+    ]
+  },
+  {
+    "group": "Technology & IT",
+    "icon": "💻",
+    "template": "slate",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Software Company", "icon": "💻", "popular": 1},
+      {"name": "IT Support", "icon": "🛠️", "popular": 1},
+      {"name": "Cyber Cafe", "icon": "🖥️"},
+      {"name": "Web Hosting", "icon": "☁️"},
+      {"name": "Data Centre", "icon": "🗄️"},
+      {"name": "App Developer", "icon": "📱"},
+      {"name": "POS Dealer", "icon": "💳"},
+      {"name": "CCTV Installer", "icon": "📹"},
+      {"name": "Network Engineer", "icon": "🌐"},
+      {"name": "Tech Repair", "icon": "🔧"},
+      {"name": "Cybersecurity Firm", "icon": "🔐"},
+      {"name": "Cloud Services", "icon": "☁️"}
+    ]
+  },
+  {
+    "group": "Government & Public Services",
+    "icon": "🏛️",
+    "template": "aurora",
+    "modules": [],
+    "items": [
+      {"name": "Government Agency", "icon": "🏛️"},
+      {"name": "Local Government", "icon": "🏢"},
+      {"name": "Public Library", "icon": "📚"},
+      {"name": "Post Office", "icon": "📮"},
+      {"name": "Court", "icon": "⚖️"},
+      {"name": "Police Station", "icon": "👮"},
+      {"name": "Fire Service", "icon": "🚒"},
+      {"name": "Immigration Office", "icon": "🛂"},
+      {"name": "Tax Office", "icon": "🧾"}
+    ]
+  },
+  {
+    "group": "Sports & Recreation",
+    "icon": "⚽",
+    "template": "aurora",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Gym", "icon": "💪", "popular": 1},
+      {"name": "Football Academy", "icon": "⚽"},
+      {"name": "Swimming Pool", "icon": "🏊"},
+      {"name": "Tennis Club", "icon": "🎾"},
+      {"name": "Golf Club", "icon": "⛳"},
+      {"name": "Sports Club", "icon": "🏅"},
+      {"name": "Recreation Centre", "icon": "🎯"},
+      {"name": "Gaming Centre", "icon": "🎮"},
+      {"name": "Martial Arts Studio", "icon": "🥋"}
+    ]
+  },
+  {
+    "group": "Personal Services",
+    "icon": "🧵",
+    "template": "professional",
+    "modules": ["professional"],
+    "items": [
+      {"name": "Tailor", "icon": "✂️", "popular": 1},
+      {"name": "Laundry", "icon": "🧺", "popular": 1},
+      {"name": "Dry Cleaner", "icon": "👔"},
+      {"name": "Shoemaker", "icon": "👞"},
+      {"name": "Watch Repair", "icon": "⌚"},
+      {"name": "Key Cutting", "icon": "🔑"},
+      {"name": "Travel Agency", "icon": "✈️"},
+      {"name": "Visa Consultant", "icon": "🛂"},
+      {"name": "Babysitting", "icon": "🍼"},
+      {"name": "Home Care", "icon": "🏠"},
+      {"name": "Errand Service", "icon": "🏃"},
+      {"name": "Personal Assistant", "icon": "📋"}
+    ]
+  },
+  {
+    "group": "Other Businesses",
+    "icon": "🏷️",
+    "template": "aurora",
+    "modules": ["ecommerce"],
+    "items": [
+      {"name": "Wedding Hall", "icon": "💒"},
+      {"name": "Event Centre", "icon": "🏛️"},
+      {"name": "Equipment Rental", "icon": "🔧"},
+      {"name": "Second-hand Dealer", "icon": "♻️"},
+      {"name": "Scrap Dealer", "icon": "⚙️"},
+      {"name": "Art Gallery", "icon": "🖼️"},
+      {"name": "Museum", "icon": "🏛️"},
+      {"name": "Vending Service", "icon": "🥤"},
+      {"name": "Water Supplier", "icon": "💧"},
+      {"name": "Gas Supplier", "icon": "🔥"}
+    ]
+  }
+]
