@@ -3,6 +3,12 @@
 All notable changes to the packaged, self-hostable distribution are recorded here.
 This file follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.0.3] — 2026-11-04
+
+### Fixed
+- **Fresh installs 404:** the example `config/credentials.php` shipped a hard-coded `app.url`, so every unmatched route (including the redirect to `install.php`) pointed at a non-existent URL on your machine. The application URL now derives from the request (host and subfolder); the installer pre-fills it for you.
+- `install.php` pre-fills the application URL from the detected request rather than from the example file.
+
 ## [1.0.2] — 2026-11-04
 
 ### Added

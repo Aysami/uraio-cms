@@ -46,6 +46,9 @@ $values = [
     'admin_name' => 'Uraio Administrator',
     'admin_email' => '',
 ];
+// Leave the application URL empty: derive it from the request (host + subfolder).
+$appUrl = (string) ($existing['app']['url'] ?? '');
+$values['app_url'] = $appUrl !== '' ? $appUrl : $defaultUrl;
 $errors = [];
 $fatal = null;
 $done = false;

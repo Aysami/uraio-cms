@@ -14,7 +14,7 @@ return [
         'pass' => '',
     ],
     'app' => [
-        'url' => 'http://localhost:8888/uraio',   // exact public base URL, no trailing slash
+        'url' => '',                           // leave empty: the app detects host and subfolder
         'env' => 'local',                        // local | staging | production
         'debug' => true,                          // false in production
         'key' => 'replace-with-a-64-character-random-string',

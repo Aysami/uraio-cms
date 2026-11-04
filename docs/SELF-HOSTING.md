@@ -18,7 +18,7 @@ Every one of these is checked for you on the install screen.
 
 ## 1. Install into a web server
 
-1. Download **`uraio-v1.0.2.zip`** from the [latest release](https://github.com/Aysami/uraio-cms/releases/latest).
+1. Download **`uraio-v1.0.3.zip`** from the [latest release](https://github.com/Aysami/uraio-cms/releases/latest).
 2. Unzip it. You will see an `uraio/` folder.
 3. Upload the **contents** of that folder to your document root
    (`public_html`, `htdocs`, or wherever Apache serves from).

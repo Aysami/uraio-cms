@@ -9,7 +9,7 @@ declare(strict_types=1);
 if (!defined('BASE_PATH')) {
     define('BASE_PATH', dirname(__DIR__));
 }
-define('UBOS_VERSION', '1.0.2');
+define('UBOS_VERSION', '1.0.3');
 
 require_once BASE_PATH . '/includes/config.php';
 require_once BASE_PATH . '/includes/database.php';

@@ -46,7 +46,7 @@ No framework. No Composer. No npm build. Plain PHP 8 + PDO + MySQL.
 
 ## Quick start (on your own server)
 
-1. Download **`uraio-v1.0.2.zip`** from the
+1. Download **`uraio-v1.0.3.zip`** from the
    [latest release](https://github.com/Aysami/uraio-cms/releases/latest).
 2. Unzip it and upload the contents to your server's document root (or a subdirectory).
 3. Visit **`https://your-domain.example/install.php`**.
