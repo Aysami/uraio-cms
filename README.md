@@ -9,7 +9,7 @@ host their own.
 
 No framework. No Composer. No npm build. Plain PHP 8 + PDO + MySQL.
 
-[![CI](https://github.com/Aysami/uraio/actions/workflows/ci.yml/badge.svg)](https://github.com/Aysami/uraio/actions/workflows/ci.yml)
+[![CI](https://github.com/Aysami/uraio-cms/actions/workflows/ci.yml/badge.svg)](https://github.com/Aysami/uraio-cms/actions/workflows/ci.yml)
 [![License: GPL-2.0-or-later](https://img.shields.io/badge/license-GPL--2.0--or--later-blue.svg)](LICENSE)
 [![PHP 8.1+](https://img.shields.io/badge/PHP-8.1+-7a86e8.svg)](https://www.php.net)
 
@@ -47,7 +47,7 @@ No framework. No Composer. No npm build. Plain PHP 8 + PDO + MySQL.
 ## Quick start (on your own server)
 
 1. Download **`uraio-v1.0.2.zip`** from the
-   [latest release](https://github.com/Aysami/uraio/releases/latest).
+   [latest release](https://github.com/Aysami/uraio-cms/releases/latest).
 2. Unzip it and upload the contents to your server's document root (or a subdirectory).
 3. Visit **`https://your-domain.example/install.php`**.
 4. Fill in the database details and create your administrator account.
@@ -61,7 +61,7 @@ No framework. No Composer. No npm build. Plain PHP 8 + PDO + MySQL.
 ## Quick start (local, macOS with MAMP)
 
 ```bash
-git clone https://github.com/Aysami/uraio.git
+git clone https://github.com/Aysami/uraio-cms.git
 cd uraio
 cp config/credentials.example.php config/credentials.php
 # MAMP's MySQL is on port 8889 with user root, password root (or as you set it).
