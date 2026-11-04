@@ -2,7 +2,7 @@
 # Build the distributable zip of Uraio.
 #
 # Usage: ./build.sh
-# Output: dist/uraio-v<version>.zip  (e.g. dist/uraio-v1.0.2.zip)
+# Output: dist/uraio-v<version>.zip  (e.g. dist/uraio-v1.0.3.zip)
 
 set -euo pipefail
 
