@@ -202,7 +202,7 @@ layout_public_nav();
 layout_public_footer();
 ?>
 <div class="install-banner" id="install-banner">
-  <span class="brand-mark"><?= icon('sparkles') ?></span>
+  <span class="brand-mark"><img src="<?= e(app_url('assets/images/logo.png')) ?>" alt="Uraio"></span>
   <div>
     <h4>Install Uraio on this device</h4>
     <p>Quick access from your home screen, with offline support.</p>

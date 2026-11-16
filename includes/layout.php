@@ -69,7 +69,7 @@ function layout_public_nav(): void
     ?>
 <header class="landing-nav container">
   <a class="brand" href="<?= e(app_url('index.php')) ?>">
-    <span class="brand-mark"><?= icon('sparkles') ?></span>
+    <span class="brand-mark"><img src="<?= e(app_url('assets/images/logo.png')) ?>" alt="Uraio"></span>
     <span class="brand-text">Uraio<span class="muted brand-suffix" style="font-weight:500"> Business OS</span></span>
   </a>
   <nav class="nav-links" aria-label="Main navigation">
@@ -96,7 +96,7 @@ function layout_public_footer(): void
     <div class="footer-grid">
       <div>
         <a class="brand" href="<?= e(app_url('index.php')) ?>">
-          <span class="brand-mark"><?= icon('sparkles') ?></span>
+          <span class="brand-mark"><img src="<?= e(app_url('assets/images/logo.png')) ?>" alt="Uraio"></span>
           <span>Uraio Business OS</span>
         </a>
         <p class="muted small" style="max-width:320px;margin-top:12px">The operating system for small businesses: customers, orders, bookings, payments and a website that grows with you.</p>
@@ -157,7 +157,7 @@ function layout_app_start(array $business, string $activeKey, string $title, str
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-head">
       <a class="brand" href="<?= e(app_url('app/dashboard.php')) ?>">
-        <span class="brand-mark brand-mark-sm"><?= icon('sparkles') ?></span>
+        <span class="brand-mark brand-mark-sm"><img src="<?= e(app_url('assets/images/logo.png')) ?>" alt="Uraio"></span>
         <span style="font-size:1rem">Uraio</span>
       </a>
       <button class="icon-btn mobile-menu-btn" type="button" data-sidebar-close aria-label="Close menu"><?= icon('x') ?></button>
@@ -331,7 +331,7 @@ function auth_page_start(string $title, string $subtitle, string $heading = 'Run
   <aside class="auth-aside">
     <div>
       <a class="brand" href="<?= e(app_url('index.php')) ?>">
-        <span class="brand-mark"><?= icon('sparkles') ?></span>
+        <span class="brand-mark"><img src="<?= e(app_url('assets/images/logo.png')) ?>" alt="Uraio"></span>
         <span>Uraio Business OS</span>
       </a>
       <h2><?= e($heading) ?></h2>
@@ -344,7 +344,7 @@ function auth_page_start(string $title, string $subtitle, string $heading = 'Run
   </aside>
   <div class="auth-form-side">
     <a class="brand" href="<?= e(app_url('index.php')) ?>">
-      <span class="brand-mark brand-mark-sm"><?= icon('sparkles') ?></span>
+      <span class="brand-mark brand-mark-sm"><img src="<?= e(app_url('assets/images/logo.png')) ?>" alt="Uraio"></span>
       <span>Uraio</span>
     </a>
     <h1><?= e($title) ?></h1>

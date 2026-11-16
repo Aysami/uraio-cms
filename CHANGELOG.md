@@ -3,6 +3,15 @@
 All notable changes to the packaged, self-hostable distribution are recorded here.
 This file follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.0.5] — 2026-11-16
+
+### Added
+- **Quick, few-click installer:** the first-run installer now pre-fills smart defaults (including local/MAMP detection), runs clear pre-install checks, and keeps advanced settings (host/port/URL/site) collapsible so a typical install only needs database details and an admin account.
+- **Refreshed branding:** updated platform logo and regenerated PWA/app icons (favicon, Apple touch, 192/512, maskable).
+
+### Changed
+- Installer UI simplified to reduce required input and make setup faster and clearer.
+
 ## [1.0.3] — 2026-11-04
 
 ### Fixed
